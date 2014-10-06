@@ -1,0 +1,39 @@
+{
+	"name": "trailmix",
+	"author": "zachb",
+	"version": "1.1.0",
+	"fullName": "Trail Mix",
+	"id": "jid0-IBd6i6XryAH1GMoFNPBvY1ACSR0@jetpack",
+	"preferences": [
+		{
+			"name": "apikey",
+			"title": "API Key",
+			"type": "string",
+			"description": "find at https://xxx.campfirenow.com/member/edit, where xxx is your domain"
+		},
+		{
+			"description": "e.g. xxx in https://xxx.campfirenow.com",
+			"name": "domain",
+			"title": "Domain",
+			"type": "string"
+		},
+		{
+			"name": "filterRegex",
+			"type": "string",
+			"title": "Filter Regex",
+			"description": "JS regular expression that messages must match to be shown, e.g. 'Zach B:'. Passed into RegExp() and case-insensitive. Blank shows all messages."
+		},
+		{
+			"name": "playSound",
+			"type": "bool",
+			"value": false,
+			"title": "Play sound on message"
+		},
+		{
+			"label": "Apply",
+			"name": "applyButton",
+			"title": "Apply",
+			"type": "control"
+		}
+	]
+}
