@@ -3,9 +3,12 @@ var table = document.getElementById("rooms-list-table");
 self.port.on("update", function(roomdata, status){
  
     if (status == "NoApiKey") {
-        document.getElementById("messages").innerHTML = "Please set API key and domain in add-on preferences.";
+        var tn = document.createTextNode("Please set API key and domain in add-on preferences.");
+        document.getElementById("messages").appendChild(tn);
     } else {
-        document.getElementById("messages").innerHTML = "";
+        var node = document.getElementById("messages");
+        if (node.firstChild)
+            node.removeChild(node.firstChild);
     }
  
     roomdata.forEach(function (room) {       
